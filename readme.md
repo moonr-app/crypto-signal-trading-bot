@@ -1,6 +1,10 @@
 # Crypto-signal-trading-bot
 
-## Rationalè
+## Firstly a warning
+This project has the ability to spend real money so please ensure you read through the code and understand how it works before
+committing to running it. We cannot be held responsible for any losses incurred because of its use.
+
+## Rationale
 As part of our research for creating [moonr.app](https://moonr.app), we wanted to understand just how hard it is to try
 and time the market when buying cryptocurrencies and how for most people this is not the right strategy. After making a bit of money & losing a lot of money, 
 those lessons have definitely been learned.
@@ -9,7 +13,7 @@ If you find this project interesting, please head over to [MoonR](https://moonr.
 and enter your details to get regular updates as we get ready to launch.
 
 ## What Exactly is this project?
-This bot was inspired by [this](https://github.com/CyberPunkMetalHead/gateio-crypto-trading-bot-binance-announcements-new-coins) python project. However, this is a pure Go implementation written from the ground up and with some extra
+This bot was inspired by [this](https://github.com/CyberPunkMetalHead/gateio-crypto-trading-bot-binance-announcements-new-coins) python project. However, this is a pure go implementation written from the ground up and with some extra
 features.
 
 Once deployed, this bot scrapes Coinbase's API and Binance's coin announcement blog on a specified interval to look for newly listed coins.
@@ -163,8 +167,3 @@ docker run -it --log-driver=awslogs --log-opt awslogs-region=ap-northeast-1  --l
 (replace `ap-northeast-1` with relevant region)
 
 This will create a log group called `cryptoBotGroup` in the same region.
-
-
-## Warning
-This project has the ability to spend real money so please ensure you read through the code and understand how it works before 
-committing to running it. We cannot be held responsible for any losses incurred because of its use.
